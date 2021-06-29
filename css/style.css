@@ -1,0 +1,534 @@
+/*-------------------------------------------------EDIT WHATEVER YOU WANT! THIS IS JUST A DRAFT---------------------------------------------*/
+/*---------------------THIS IS DIV OF PRODUCT VIEW BY NAME AND CATEGORY (EDIT OR DELETE AS YOU WISH)-------------------------------------------------------*/
+body {
+  background: lightblue url("../img/background.png") no-repeat fixed center;
+}
+/*-----Header Dropdown---------*/
+div.fixed {
+	background: rgba(74, 137, 222, 0.7);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+# Header-up
+--------------------------------------------------------------*/
+#container {
+	height: 100vh;
+	width: 100%;
+}
+#header-up {
+  height: auto;
+  transition: all 0.5s;
+  z-index: 3;
+  background: #fff;
+  position: relative;
+}
+
+#header-up #logo img {
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  #header-up {
+    padding: 20px 0;
+    height: 74px;
+  }
+
+  #header-up #logo img {
+    max-height: 40px;
+  }
+}
+
+.text-info {
+	height:5%;
+}
+/*--------------------------------------------------------------
+# Nav Bar Menu
+--------------------------------------------------------------*/
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  color: red;
+  text-decoration: none;
+}
+
+.topnav-right {
+  float: right;
+}
+
+/*--------------------------------------------------------------
+# Section category
+--------------------------------------------------------------*/
+#category {
+  padding-top: 1px;
+  min-height: 100vh;
+  background-color: #f8f8ff;
+}
+#container-category {
+	margin-top:2%;
+}
+/*--------------------------------------------------------------
+# Section slogan on main page
+--------------------------------------------------------------*/
+#slogan{
+  padding-top: 40px;
+  background-image: url(slogan1.jpg);
+  position: relative;
+  width: 100%;
+}
+#header-image{
+  text-align: center;
+  z-index: 3;
+  font-family: cursive;
+  color: white;
+  font-size: 1.5cm;
+  position: relative;
+}
+
+
+/*Set Height for Product Name's Space */
+.title-box{
+	height:13%;
+	margin:5%;
+	color: black;
+}
+/* Margin the DIV for Product View*/
+.product-list {
+	position:relative;
+	min-height:100vh;
+	margin: 10%;
+}
+
+/* ul tag of Product View */
+.list {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	overflow: hidden;
+	text-align:center;
+}
+/* li tag of Product View */
+.product-item {
+	float: left;
+	width:20%;
+	height:300px;
+	text-align: center;
+}
+
+/*-------------BUTTON "ADD TO CART"-------------------------*/
+.button {
+  padding: 7.5px 12.5px;
+  font-size: 12.5px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  outline : none;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  outline : none;
+  transform: translateY(4px);
+}
+
+body {
+  background-color: white;
+  
+}
+/*---------------------------FORM-FILTER DIV(CATEGORY AND SEARCH FORM)-----------------------------*/
+#form-filter {
+	border: 3px solid #fff;
+	height:auto;
+	text-align:left;
+}
+#category-div {
+	width: 23%;
+	height:100px;
+    float: left;
+    padding: 20px;
+}
+#search-div {
+	width: 75%;
+	height:100px;
+    float: left;
+    padding: 20px;
+}
+
+
+
+/*--------------THIS IS CSS FOR SELECT DROPDOWN! YOU CAN DELETE IT! I JUST COPIED FROM INTERNET (EDIT OR DELETE AS YOU WISH)----------------------*/
+.box {
+	position: relative;
+	top: 50%;
+	transform: translate(-5%, -50%);
+}
+
+.box select {
+  color: black;
+  padding: 12px;
+  margin-left: 100px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  font-family: FontAwesome;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------SEARCH FORM (EDIT OR DELETE AS YOU WISH)-----------------------------------------------------------------*/
+
+#search-input {
+	color: black;
+	padding: 12px;
+	border: none;
+	font-size: 20px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+	float:right;
+  /* margin-top: -95px;
+  margin-right: 142px; */
+}
+#search-button {
+	padding: 17px;
+	border: none;
+	font-size: 20px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+	float: right;
+  /* margin-right: 90px;
+  margin-top: -95px; */
+}
+input[id=search-input] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% 
+I just change to 30%*/
+input[id=search-input]:focus {
+  width: 40%;
+}
+input[id=re-input] {
+  width: 250px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=password] {
+  width: 250px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+/* input[type=password]:focus {
+  width: 30%;
+} */
+
+/*--------------------------------------------------------------
+# Add product Section
+--------------------------------------------------------------*/
+#addproduct {
+  margin-top: 145px;
+  height: 100%;
+}
+#addproduct h1 {
+  margin-left: 100px;
+}
+#add-box {
+  margin-left: 100px;
+  background-color: #f8f8ff;
+
+  width: 85%;
+  height: 100vh;
+}
+#add-btn {
+  float: right;
+  margin-right: 50px;
+}
+
+/*--------------------------------------------------------------
+# Section slogan on add product page
+--------------------------------------------------------------*/
+#slogan-add{
+  padding-top: 40px;
+  background-image: url(add.jpg);
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+#header-image-add{
+  text-align: center;
+  z-index: 3;
+  font-family: cursive;
+  color: white;
+  font-size: 1.5cm;
+  position: relative;
+}
+#add-form {
+  margin-left: 50px;
+}
+#add-form input {
+  margin-left: 27px;
+}
+#add-btn {
+    border: 1px solid #0A3D5B;
+    background-color: transparent;
+    color: #0A3D5B;
+    padding: 13px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+
+/* slide hover left -1 css */
+
+#add-btn.slide-hover-left-1 {
+    background-image: linear-gradient(0, #cd243b, #cd243b);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+}
+
+#add-btn.slide-hover-left-1:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
+/* slide hover left 2 css */
+
+#add-btn.slide-hover-left-2 {
+    background-image: linear-gradient(0, #0739df, #0739df);
+    background-size: 0 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+#add-btn.slide-hover-left-2:hover {
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+/* slide hover left 3 css */
+
+.slide-hover-left-3 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.slide-hover-left-3:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
+
+/* hover-center 1 css */
+
+#add-btn.hover-center-1 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+#add-btn.hover-center-1:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
+/* hover-center-2 css */
+
+.hover-center-2 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+#add-btn.hover-center-2:hover{
+    background-size: 100% 100%;
+    color: #fff;
+}
+/*--------------------------------------------Register.PHP-------------------------------------------*/
+
+.register-div {
+  margin-top: -15px;
+  background-color: white;
+  background-image: url(t.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  
+}
+.slide-hover-left-1 {
+  border-radius:10px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 45%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.slide-hover-left-1:hover {
+  background-color: #4CAF50;
+  color: white;
+  
+}
+#signup{
+  color: white;
+  font-weight: 700;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 45%;
+}
+#re-input {
+  top: 5%;
+  margin-left: 40%;
+}
+
+#checkbox-privacy {
+  margin-left: 40%;
+  
+}
+#checkbox-text {
+  color: white;
+}
+/*--------------------------------------------------------------
+# Error
+--------------------------------------------------------------*/
+.error {
+  font-weight: 700;
+  
+  width: 20%;
+  border-radius: 27px;
+  color: white;
+  margin-bottom: 15px;
+  background-color: rgba(215, 44, 44, 0.5);
+  margin-left: 40%;
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #f2f5f8;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  z-index: 999;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+/*--------------------------------------------------------------
+# Order History
+--------------------------------------------------------------*/
+.name {
+  text-transform: uppercase;
+  text-align: center;
+  color: #6c8b8e;
+  letter-spacing: 10px;
+  font-size: 2.0em;
+  margin-top: 10px
+}
+.greeting {
+  font-size: 21px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #6f8d90;
+  margin: 35px 0;
+  letter-spacing: 1.2px
+}

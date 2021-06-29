@@ -1,0 +1,21 @@
+Thank you for Purchasing with JMB!
+      
+Here is your Order Receipt:
+Date of Purchase: 2021-06-23 13:41:19
+----------------------------------
+Cust_ID: 4
+Customer Name: abu abu
+Shipping Address: abu
+Email Address: abu69@gmail.com
+----------------------------------
+Items:
+
+Secretlab Titan 2020 Series
+Price: 99.00
+Quantity: 1
+total: $99.00
+
+Grand Total: $99.00-------------------------------
+
+  
+  
